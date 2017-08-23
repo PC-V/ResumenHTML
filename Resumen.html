@@ -2,22 +2,133 @@
 <html>
 <head>
 <title> Resumen HTML </title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {background-color: whitesmoke}
+
+table, td, th {border: 1px solid black; table-layout: center; padding: 2px;}
+</style>
+
 </head>
 
 <body>
-<h1> Resumen HTML </h1>
-<p> Todos los documentos HTML deben empezar con la declaracion del tipo, que en este caso es < !DOCTYPE html> ademas de empezar con < html> y terminar con < /html>. </p>
+ <h1> Resumen HTML </h1>
+ <p> Todos los documentos HTML deben empezar con la declaracion del tipo, que en este caso es < !DOCTYPE html> ademas de empezar con < html> y terminar con < /html>. </p>
 
-<p> La parte visible del documento se coloca entre < body> y < /body>; para insertar un texto se pueden utilizar encabezados (que inician con < h1> y terminan con < /h1>), que varian de tamanio siendo h1 el mas grande y h6 el mas pequenio, y parrafos, en los que simplemente se coloca el texto entre < p> y < /p>. </p>
+ <p> La parte visible del documento se coloca entre < body> y < /body>; para insertar un texto se pueden utilizar encabezados (que inician con < h1> y terminan con < /h1>), que varian de tamanio siendo h1 el mas grande, h6 el mas pequenio y hr un cambio tematico que se ve como una linea, y parrafos, en los que simplemente se coloca el texto entre < p> y < /p>. </p>
  <p> Para insertar un link se pone el destino despues del atributo "href" entre < a> y < /a> de la siguiente manera:  <br> < a href="destino"> Nombre del link < /a> </p>
 
- <p> Las imagenes se definen con la etiqueta < img> y se insertan de la siguiente manera:  < img src="Nombre de la imagen en sistema" alt="Titulo" width="ancho" height="largo"> </p>
+ <p> Las imagenes se definen con la etiqueta < img> y se insertan de la siguiente manera:  < img src="Nombre de la imagen en sistema" alt="Titulo" width="ancho en pixeles" height="largo en pixeles"> </p>
 
+<hr>
  <h2> Atributos </h2>
 
- <p> El atributo de idioma se declara dentro de la etiqueta < html> y se declara como lang="Codigo del idioma", por ejemplo < html lang="en-US"> <br> El titulo mostrara el tetxo introducio al colocar el puntero sobre el parrafo y se coloca dentro de la etiquetta < p> asi: < p title="Texto del titulo"> <br> El atributo href, como se habia visto anteriormente, se usa para insertar links dentro de un texto. <br> Los atributos de tamanio se colocan dentro de la etiqueta de imagen y son width y height. </p>
+ <p> El atributo de idioma se declara dentro de la etiqueta < html> y se declara como lang="Codigo del idioma", por ejemplo < html lang="en-US"> <br> El titulo mostrara el texto introducio al colocar el puntero sobre el parrafo y se coloca dentro de la etiquetta < p> asi: < p title="Texto del titulo"> <br> El atributo href, como se habia visto anteriormente, se usa para insertar links dentro de un texto. <br> Los atributos de tamaño se colocan dentro de la etiqueta de imagen y son width y height. </p>
 
+ <p> Independientemente del numero de lineas que ocupe un texto en el codigo, estas no se veran a menos que se introduzcan en parrafos separados, se use el elemtento < pre> o se use un separador de elemento vacio o break, que es: < br>.</p>
+
+<hr>
+ <h2> Estilos </h2>
+
+ <p> El estilo se define para cada etiqueta y puede contener los siguientes elementos que se escrben con la sintaxis < etiqueta style="propiedad:valor;">:<br> <br>
+ El color de fondo se establece con "Background-color:nombre de color;". <br>
+ El olor de texto se establece con "Color:nombre de color;". <br>
+ El tipo de letra se define con "font-family:tipo de letra;". <br>
+ El tamaño de la letra se define con "font-size: porcentaje de aumento;". <br>
+ La alineacion se define con "text-align:posicion;". <br>
+ </p>
+
+<hr>
+ <h2> Formato de texto </h2>
+
+ <p> Los elementos de formato de texto se coloca dentro del parrafo abriendo y cerrando normalmente la etiqueta, los siguientes son los tipos de formato que se pueden aplicar </p>
+
+ <pre style="text-align:center;font-family: Arial"> 
+
+    < b> - Bold text
+    < strong> - Important text
+    < i> - Italic text
+    < em> - Emphasized text
+    < mark> - Marked text
+    < small> - Small text
+    < del> - Deleted text
+    < ins> - Inserted text
+    < sub> - Subscript text
+    < sup> - Superscript text
+</pre>
+
+<hr>
+ <h2> Citas </h2>	 					
+
+ <p> Una cita normal se coloca entre < q> y < /q> dentro del parrafo. <br> UNa cita de bloque se usa para citas largas y se coloca con la etiqueta < blockquote cite:"Referencia de la cita"> y, como siempre, cerrandola con < /blockquote>. <br> Las abreviaciones se usan para que, cualdo se coloque el puntero sobre esta, aparezca el significado de la abreviacion; un ejemplo seria  < p>The < abbr title="World Health Organization">WHO< /abbr> was founded in 1948. <br> La eticqueta < cite> se usa para refererire al nombre de la obra y se coloca dentro del parrafo <br> </p> 
  
+<hr>
+ <p> Nota: Si quieres colocar un comentario dentro del codigo debes ponerlo asi: < !-- Aqui tu comentario -->. <br> Puedes modificar el estilo de los links dentro de < style> especificandolos con a:link {} el formato del link normalmente, con a:visited {} el formato del link una vez que fue abierto y a:active{} el formato del link cuando esta activo; tambien puedes poner el link dentro de una imagen colocandola dentro de < a> y < /a> en vez del texto del link. <b>Recuerda que siempre que el link lleve a una pagina externa debes de escribir al principio http://</b> </p>
+
+<hr> 
+
+ <h2> Tablas </h2>
+
+ <p> Para formar una tabla se coloca la eqiqueta < table>, con < tr> se define las filas de la tabla < th> los encabezados y < td> el contenido de cada celda. <br> Para agregarle un estilo se coloca en el apartado de style al principio del código y se coloca dentro de las llaves despues de table, td, th {} para toda la tabla, despues de th para los encabezados y despues de td para los datos de celda. <br> Los estilos que se le pueden dar a cada tabla son los siguientes: </p>
+
+ <table>
+ 	<tr> 
+ 		<th> Atributo </th>
+ 		<th> Característica </th>
+ 	</tr>
+ 	<tr>
+        <td> Border </td>
+        <td> Tamaño del borde, forma y color </td>
+    </tr>
+    <tr>
+ 		<td> Border-collapse </td>
+ 		<td> Colapsa los bordes de la tabla y las celdas. </td>
+	</tr>
+	<tr>
+ 		<td> Padding </td>
+ 		<td> Determina el espacio entre el borde y el texto
+ 	</tr>
+ 	<tr>
+ 		<td> Text-align </td>
+ 		<td> Determina la posicion del texto dentro de la celda>
+ 	</tr>
+ 	<tr>
+ 		<td> border-spacing </td>
+ 		<td> Determina el espacio entre los bordes. </td>
+ 	</tr>
+ 	<tr>
+ 		<td> colspan="#" </td>
+ 		<td> Se usa para indicar que una celda contiene un numero de columnas. </td>
+ 	</tr>
+ 	<tr>
+ 		<td> rowspan="#"  </td>
+ 		<td> Se usa para indicar que una celda contiene un numero de filas. </td>
+ 	</tr>
+ 	<tr>
+ 		<td> caption </td>
+ 		<td> Determina el titulo de la tabla. </td>
+ 	</tr>
+ </table>
+
+ <hr>
+
+ <h2> Listas </h2>
+
+ <p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
