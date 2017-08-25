@@ -115,7 +115,83 @@ table, td, th {border: 1px solid black; table-layout: center; padding: 2px;}
 
  <h2> Listas </h2>
 
- <p> 
+ <p> Una lista desordenada se introduce con la etiqueta < ul>, mientras que cada objeto en la lista se coloca con < li> y se puede elegir el marcador dentro de la etiqueta < ul> con style="list-style-type:tipo de marcador"; puedes elegir entre disc, circle, square o none. <br> Una lista ordenada se pone con la etiqueta < ol> y los marcadores se ponen con type="tipo" y puede ser 1, A, a, I, i. <br> Una lista descriptiva se inicia con < dl>, se colocan los objetos con la etiqueta < dt> y su descripcion  con < dd>. Recuerda que es posible poner listas dentro de listas. </p>
+
+ <hr> 
+
+<h2> Elementos de bloque e inline </h2>
+
+ <p> Los elementos de bloque inician en una nueva linea y toman todo el espacio de la pagina, mientras que los elementos inline solamente ocupan el espacio necesario. <br> El elemento < div> usualmente se usa para contener varios elementos HTML que comparten estilo y clase, creando bloques. <br> El elemento < span> se usa para contener texto e, igual que para los div, comparte estilo y clase. 
+
+ <hr>
+
+ <h2> Clases </h2>
+
+ <p> Las clases se utilizan para definir un estilo para los elementos de la misma clase; para usar esto, se escribe dentro del apartado Style al principio del código div.Nombredeclase o span.Nombredeclase, con los atributos de estilo entre llaves, dependiendo de si le quieres aplicar la clase a un elemento de bloque o inline
+
+ <hr>
+
+ <p> El elemento iframe se utiliza para insertar una imagen, igual que con < img>, pero incluyendole un marco; se usa la sigiente sintaxis: < iframe> src="ruta de imagen" name="Nombre del iframe">< /iframe>. <b>Puedes agregarle un link al iframe escribiendo target="Nombre del iframe" dentro de la etiqueta < /a>. </b>
+
+ <p> En cuanto a las rutas de archivo se introducen de la siguiente manera: </p>
+
+ <table> 
+ 	<tr>
+ 		<th> Ruta </th>
+ 		<th> Descripción </th>
+ 	</tr>
+ 	<tr> 
+ 		<td> < img src="Archivo"> </td>
+ 		<td> El archivo esta en el mismo folder que la pagina </td>
+ 	</tr>
+ 	<tr>
+ 		<td> < img src="images/Archivo"> </td>
+ 		<td> El archivo se encuentra en el folder de imagenes en el folder actual </td>
+ 	</tr>
+ 	<tr>
+ 		<td> < img src="/images/Archivo"> </td>
+ 		<td> El archivo se encuentra en el folder de imagenes en la raiz de la pagina. </td>
+ 	</tr>
+ 	<tr> 
+ 		<td> < img src="../Archivo"> </td>
+ 		<td> El archivo se encuentra en un folder un nivel arriva de la pagina </td>
+ 	</tr>
+ </table>
+
+ <hr>
+
+ <p> En el apartado head, al principio del codigo, se pone metadata de la pagina, en este apartado se incluye lo siguiente: < style>, que se refiere al estilo de la pagina; < title>, que define el titulo de la pagina dentro del navegador; < link>, que se usa para introducir hojas de estilo externas a la pagina; < meta>, que se usa para definir los caractéres (charset), palabras clave, autor y demás. </p>
+
+ <hr>
+
+ <p> La distribucion de cada elemento de la pagina se define por etiquetas, colocando lo que se desee poner en un espcio determinado entre estas; las opcione son: </p>
+
+ <pre style="text-align:center;font-family: Arial" >
+
+
+    < header> - Defines a header for a document or a section
+    < nav> - Defines a container for navigation links
+    < section> - Defines a section in a document
+    < article> - Defines an independent self-contained article
+    < aside> - Defines content aside from the content (like a sidebar)
+    < footer> - Defines a footer for a document or a section
+    < details> - Defines additional details
+    < summary> - Defines a heading for the < details> element
+</pre>
+
+<img src="Layout.png" style="width: 300px;height: 400px">
+
+<hr> 
+
+<h2> Codigo computacional </h2>
+
+<p> El codigo computacional se pone con la etiqueta < code> y se puede usar para resolver ecuaciones o programar respuestas y variables dentro de una pagina. El elemnto < kbd> se usa para referirse a una combinacion de teclas. <br> El texto dentro de la etiqueta < samp> se usa para referirse a una salida y el elemento < var> para declarar una variable. 
+
+
+
+
+
+
 
 
 
