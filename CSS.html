@@ -6,6 +6,14 @@
 
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style> 
+
+img{display: block;
+    margin: auto;
+    width: 40%;}
+
+</style>
+
 
 </head>
 
@@ -29,6 +37,146 @@
 <p> <b> Clases </b> <br> Las clases se usan para aplicar u mismo formato a diferentes elementos en la pagina sin la necesidad de declararlo en el apartado Style o de darle el mismo estilo a todos los elementos del mismo tipo en toda la pagina (como pasa en el apartado Style). Igual que el id se declara en Style con .NombredeClase {atributos} o colocando p.center {} para declarar que solo los elementos < p> con clase "center" van a adquirir los atributos declarados; se llaman a un elemento te la misma manera que el id pero colocando class. <br> <b> Recuerda que puedes agrupar los elementos a los que quieres aplicar un mismo fomato separandolos por comas antes de los atributos; los comentarios en CSS se colocan entre /* y */ </b> </p>
 
 <p> Los <b> colores </b> se especifican de tres maneras: un nombre de color valido de la lista, con una formula RGB(0,0,0) o con el codigo hexadecimal del color, todo esto se puede encontrar <a href="https://www.w3schools.com/colors/colors_picker.asp"> aqui.  </a> </p>
+
+<p> <b> Fondos </b> <br> El fondo se define con background-propiedad: valor, estas propiedades pueden ser color, si quieres definir un color como fondo; imagen, si quieres definir una imagen como fondo; repeat, para definir el numero de repeticiones de la imagen en la pagina; position, para definir la posicion de la imagen en la pagina y attachment para definir si la imagen se quedará fija en la pagina mientras se navega o si se mueve. </p>
+
+<p> <b> Bordes </b> Los bordes se colocan con border-style: valor; los bordes pueden ser puntos (dotted), lineas (dashed), solido (solid), doble (double), sombreado (groove o ridge), inset y outset. El color se determina con border-color y se le puede aplicar un estilo diferente a cada borde con border-top/bottom/left/right-style; para ahorrarte codigo puedes poner las cuatro propiedades de cada borde despues del border-style, las propiedades se aplicaran en el siguiente orden: </p>
+
+<ul>
+	<li> 4 propiedades - Arriba, derecha, abajo, izquierda. </li>
+	<li> 3 propiedades - Arriba, izquierda y derecha, abajo. </li>
+	<li> 2 propiedades - Arriba y abajo, izquierda y derecha. </li>
+	<li> 1 propiedades - Todos </li>
+</ul>
+
+<p> Al igual que con los bordes, los <b> margenes </b> pueden tener propiedades en sus 4 lados pero estos son usados para generar espacio dentro de un elemento y puede tener los siguientes valores: auto, para que el navegador cacule el margen automaticamente; lenght, determina el tamaño del margen y colapse, que hace 0 el espacio entre el margen y el borde; puedes tambien aplicar el mismo margen que el elemento en el que esta anidado otro con el valor inherit. El <b> padding </b> funciona igual que los margener pero se refiere al espacio generado alrededor de un objeto. El <b> outline </b> es un 'borde' fuera del borde y puede tener las mismas propiedades que este. </p>
+
+<img src="CSS margenes.png" style="width: 600px;height: 300px"> 
+
+<p> <b> Texto </b> <br> Se puede modificar el estilo del texto de diversas maneras; se le puede aplicar un color, alineación (Text-align), decoraciones (text-decoration), transformarlo a todo mayusculas o minusculas (text-transformation), agregarle sangria (text-indent), espaciado entre cada letra (letter-spacing), la altura de las lineas (line-height), la direccion del text (direction), espacio entre palabras (word spacing), sombreado (text-shadow). El tipo de letra se modifica con font-atributo; estos atributos pueden ser family(tipo de letra) style (normal, italicas, oblicua), size (tamaño), weight (grosor) </p>
+
+<p> Puedes modificar el estilo de los <b>links </b> dentro de < style> especificandolos con a:link {} el formato del link normalmente, con a:visited {} el formato del link una vez que fue abierto y a:active{} el formato del link cuando esta activo, con estos formatos puedes construir botones de lonk para darle mayor estetica a tu página </p>
+
+<p> Para darle cierto formato a las <b> listas </b> se hace de la misma manera, dandole diferentes clases a cada lista para especificar el estilo de cada una; se usa list-style-atributo para personalizar los marcadores de cada lista, se puede usar type (tipo de marcador), image (coloca una imagen como marcador) y position (acomoda la lista en una posicion especifica) </p>
+
+<p> <b>Tablas </b> <br> Para modificar el estilo de las tablas se refiere proncipalmente a los bordes; puedes usar collapse para reducir a 0 el espacio entre el margen y el borde, especificar el borde que se desea modificar, usar la propiedad hover para que cambie de color cuando se coloca el puntero sobre la tabla, usar el indicador nth-child(even/odd) para darle un formato a rayas o usar overflow-x:auto para permitirle a la tabla ser responsiva. </p>
+
+<p> Puedes darle un limite a los objetos aplicando un max-width para evitar que estos se esparzan por todo el ancho de la pagina y definir la posicion de un elemento con position </p>
+
+<p> <b> Overflow </b> <br> La propiedad overflow se usa cuando un elemnto no cabe dentro del bloque y te permite navegar (scroll) por el, verlo (visible), ocultarlo (hidden) o colocar el scroll solo si es necesario (auto). </p>
+
+<p> Para colocar bloques alineados los unos con los otros se puede usar la propiedad float para darle un estilo de "cajas", usando despues la propiedad clear para especificar que pasa despues de esto; otra forma es simplemente usar la propiedad inline-block dentro de float. </p>
+
+<p> <b> Alineacion </b> <br> Para alinear los elementos a la izquierda, centro de un bloque simplemente se pone margin: auto; text-align:center colocaria el texto exactamente en el centro del bloque y si quieres alinear al centro una imagen simplemente la conviertes en un bloque con display: block y usas margin:auto. Otra manera de alinear el contenido de un bloque puede ser position:absolute (siempre definiendo margen y padding), con float para alinearno a la izquierda o derecha, con padding superior e inferior para ajustar la altura o con line-height. </p>
+
+<p> <b> Selectores y combinadores </b> <br> Los selectores de CSS pueden contener selectores simples y combinadores, como por ejemplo: </p>
+
+<ul> 
+	<li> Descendientes - se coloca solo un espacio entre el bloque y el elemento para especificar que los atributos dentro de {} se van a aplicar a todos los elementos p anidados dentro del padre, en este caso. </li>
+	<li> Hijos - se coloca un > entre el bloque y elemento para especificar que los atributos entre {} se van a aplicar unicamente a los elementos que descienden directamente del padre. </li>
+	<li> Hermanos adyacentes - se coloca un + entre el bloque y elemento para especificar que los atributos entre {} se van a aplicar unicamente a los elementos que siguen del hijo aunque no desciendan directamente del padre. </li>
+	<li> Hermanos generales - se coloca un + entre el bloque y elemento para especificar que los atributos entre {} se van a aplicar unicamente a los elementos anidados dentro del padre en el mismo nivel. </li>
+</ul>
+
+<p> Las pseudo-clases y pseudo-elementos se aplican especificamente a elementos y se ponen con : despues del elemento, la lista de pseudoclases puedes encontrarla <a href="https://www.w3schools.com/css/css_pseudo_elements.asp"> aqui.  </a> </p> 
+
+<p> Una barra de navegacion se puede implementar colocando una lista con links en vez de texto, estas se pueden colocar verticalmente, dentro de un bloque u horizontal escribiendo inlini en el display de la lista. </p>
+
+<p> <b> Desplegables </b> <br> Un desplegable se coloca haciendo una clase para el objetivo, una para el desplegable y haciendo que el deplegable se ejecute al poner el mouse sobre el objetivo, aqui se muestra un ejemplo para entender la estructura: </p>
+
+<pre> < style>
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</ style>
+
+< div class="dropdown">
+  < button class="dropbtn">Dropdown</ button>
+  < div class="dropdown-content">
+    < a href="#">Link 1</a>
+    < a href="#">Link 2</a>
+    < a href="#">Link 3</a>
+  </ div>
+< /div> </pre>
+
+<p> <b> Contadores </b> <br> Los contadores son variables fijas dentro de la pagina que pueden incrementarse con reglas de CSS, las propiedades que se usan son: </p>
+
+<ul> 
+	<li> Counter-reset - crea o reinicia un contador </li>
+	<li> Counter-incremeent - Incrementa el valor de un contador </li>
+	<li> Content - Inserta contenido generado </li>
+	<li> Counter - Agrega el valor del contador a un elemento </li>
+</ul>
+
+<p> Un ejemplo de uso de contador puede ser el siguiente: </p>
+
+<pre> < style>
+body {
+    counter-reset: section; //  Crea el contador llamado Section. 
+}
+
+h2::before { // define que la regla del contador como el uso del encabezado h2.
+    counter-increment: section;  //Se va a incrementar el contador Section cada que se cumpla la regla. 
+    content: "Section " counter(section) ": "; // Va a instertar antes de el encabezadoel texto "Section #: ", siendo "#" el contador.
+}
+< /style>
+< /head>
+< body>
+
+< h1>Using CSS Counters:< /h1>
+< h2>HTML Tutorial< /h2>
+< h2>CSS Tutorial< /h2>
+< h2>JavaScript Tutorial< /h2> </pre>
+
+
+
+
+
+
+
 
 
 
