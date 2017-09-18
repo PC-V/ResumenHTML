@@ -3,8 +3,9 @@
 <html>
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset= utf-8 name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="Responsive.css">
+<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Roboto" rel="stylesheet">
 
 <style>
 
@@ -20,10 +21,10 @@
 	<h1> Resumen HTML </h1>
 </div>
 
-<div class="row"> </div>
+<div class="row">
 
-<div class="col-3 menu">
-	<ul>
+<div class= "col-3 menu">
+	<ul class="col-">
 		<li> Introduccion </li>
 		<li> Atributos </li>
 		<li> Formato de texto </li>
@@ -35,13 +36,11 @@
 	</ul>
 </div>
 
-<div class="col-3 right">
-	<div class="side"> 
-	<p> Todos los documentos HTML deben empezar con la declaracion del tipo, que en este caso es < !DOCTYPE html> ademas de empezar con < html> y terminar con < /html>. </p>
-	</div>
+<div class="right logo col-3">
+	<img src="wil_logo.png" style="width:100%;height: 300px">
 </div>
 
-<div class="col 6">
+<div class="col-5">
 	<div class="text">
 		<p> La parte visible del documento se coloca entre < body> y < /body>; para insertar un texto se pueden utilizar encabezados (que inician con < h1> y terminan con < /h1>), que varian de tamanio siendo h1 el mas grande, h6 el mas pequenio y hr un cambio tematico que se ve como una linea, y parrafos, en los que simplemente se coloca el texto entre < p> y < /p>. </p>
 		 <p> Para insertar un link se pone el destino despues del atributo "href" entre < a> y < /a> de la siguiente manera:  <br> < a href="destino"> Nombre del link < /a> </p>
@@ -220,6 +219,14 @@
 
 		<p> El elemento < form> se usa para introducir formularios dentro de una página; dentro de las etiquetas se pone el título de la opcion, un break y el elemento < input>. Existen tres tipos de eleme </p>
 	</div>
+</div>
+
+<div>
+	<div class="side col-3 right"> 
+	<p> Todos los documentos HTML deben empezar con la declaracion del tipo, que en este caso es < !DOCTYPE html> ademas de empezar con < html> y terminar con < /html>. </p>
+	</div>
+</div>
+
 </div>
 
 

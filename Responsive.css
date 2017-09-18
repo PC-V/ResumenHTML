@@ -1,35 +1,42 @@
 
 html{
 	font-family: "lucida sans", sans-serif;
+    width: 100%
 }
 
 * {
     box-sizing: border-box; }
 
 .header {
-	background-color: #bfbfbf
+	background-color: #b3b3b3;
 	padding:15px;
 	color:black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 30px;
+    max-height: 150px;
+
+
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position:fixed;
     float:left;
 }
 .menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #00b33c;
+    background-color:#4d79ff;
     color: white ;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
 }
 
 .menu li:hover {
-    background-color:#009933 ;
+    background-color:#3366ff ;
 }
 
 .row::after {
@@ -56,21 +63,26 @@ html{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 660px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
+    [class*="menu"] {
+       text-align: center;
+    }
 }
 
 .side{
-    background-color: #00b33c;
+    background-color: #4d79ff;
     padding: 15px;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     display: block;
+    position: relative;
+    top:40px;
 }
 
 .right{
@@ -78,11 +90,33 @@ html{
 }
 
 .text {
-	overflow-y: scroll;
 	color:black;
 	background-color: transparent;
     height:100%;
+    float: left;
 }
+
+@media only screen and (max-width: 424px) {
+    /* For mobile phones: */
+    [class*="header"] {
+        max-height: 200px;
+    }
+}
+
+.logo {
+    display: block;
+    position: relative;
+    top:30px;
+    right:5px;
+}
+
+@media only screen and (min-width: 660px) {
+    [class*="text"] {
+        overflow-y: auto;
+        max-height: 482px;
+    }
+}
+
 
 
 
