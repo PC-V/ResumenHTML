@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+</style>
+</head>
+<body>
+
+<h2> Resumen JavaScript</h2>
+
+<p> Mientras que HTML trata el contenido de las paginas web y CSS trata la organizacion y estilos de estas, JavaScript se encarga del comportamiento de ls paginas; entre las funciones basicas de JavaScript se encuentran cambiar atributos,contenidos y estilos, asi como mostrar y ocultar elementos de HTML </p>
+
+<p> Al igual que CSS, JS se puede escribir en el head, dentro del body o en un archivo externo al HTML; tanto en el head como en el body, las instrucciones del JS se colocan dentro de la etiqueta <script> </script> y para llamar un archivo externo de JS se coloca <script src="Archivo.js"></script> en el head. </p>
+
+<p> Los resultados de JS se pueden mostrar con los siguientes métodos: </p>
+	<ul>
+		<li> document.getElementById(id).innerHTML - Lo muestra en un elemento de HTML. </li>
+		<li> document.write() - Lo muestra como un output de HTMl. </li>
+		<li> window.alert() - Muestra el contenido en una ventana de alerta. </li>
+		<li> console.log() - Muestra el contenido dentro de la comsola. </li>
+	</ul>
+<p> Las siguiente son las palabras clave usadas en JS: </p>
+
+<img src="Keywords.png" style="width: 700px;height: 400px; display: block;margin:auto">
+
+<p> Recuerda que las declaraciones siempre se separan por ;, los comentarios de una linea se ponen con // y los parrafos enteros con /* */ </p>
+
+<p> Las variables se usan dentro de JS para almacenar informacion y se pueden declarar escribiendo var x=valor; y puedes darle un valor a diferente variables en una sola declaracion, tambien es posible usar estas variables para hacer operaciones algebraicas dentro de JS. Los operadores son los mismos que se usan dentro de la aritmetica tradicional y siguen la jerarquia de operaciones pero puedes consultarlos todos <a href="https://www.w3schools.com/js/js_arithmetic.asp"> Aqui </a> Las variables pueden ser numeros, strings, objetos (se coloca entre llaves y la sopiedades separadas por comas), booleanos, arreglos (entre corchetes) o indefinido (undefined), puedes revisar el tipo de variable con typeof. </p>
+
+<h3> Funciones </h3>
+
+<p> Una funcion es un una linea de codigo diseñada para cumplir una operacion especifica a traves de operadores y variables, esta operacion se cumple cuando la funcion es "llamada" la sintaxis es la siguiente: </p>
+	<pre> 
+		function name(parameter1, parameter2, parameter3) {
+    code to be executed
+   }
+    </pre>
+<p> Una funcion puede llamarse cuando un evento especifico sucede, a traves del coidgo de JS o automaticamente; hay que recordar que se debe escribir return al final del codigo para declarar el resultado que queremos obtener de la operacion; para llamar la funcion a traves de getElement es necesario escribir funcion(), ya que si no se pone el parentesis, te va a regresar unicamente la definicion de la funcion, ademas, puedes asignarle funciones a variables. </p>
+
+<h3> Objetos <h3>
+
+<p> Un objeto tiene propiedades y metodos, los metodos son operaciones que se hacen entre las propiedades y se colocan como una funcion, por ejemplo: </p> <pre>    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+</pre> 
+
+<h3>Eventos </h3>
+
+<p> UN evento HTML puede ser algo que el navegador o elusuario hace, tal como hacer click en algun lugar o cambiar la entrada de un campo. Por ejemplo, para crear un boton que te regrese la hora puedes usar el siguiente codigo: < button onclick="document.getElementById('demo').innerHTML = Date()">The time is?< /button>. Algunos de los eventos mas comunes de JS son los siguientes: </p>
+
+<img src="Eventos.png" style="width: 700px;height: 400px; display: block;margin:auto">
+
+<p> Los strings tienen metodos rpopios separados de los demas elementos: con indexOf() (al igual que con search()) puedes encontrar donde empieza un texto especifico dentro de un string y con lastIndexOf() donde termina; el metodo slice() te regresa un pedazo de texto especificado entre ciertas posiciones, al igual que substr(); el metodo replace() se usa para reemplazar una cadena de caracteres con otra; puedes usar .toUpperCase() y .toLowerCase para convertir un texto a mayusculas y viceversa; el metodo concat () sirve para unir dos strings; .charAt regresa el caracter en una determinada posicion dentro de un string; puedes convertir un string en un arreglo con el metodo split() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
