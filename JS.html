@@ -52,7 +52,32 @@
 
 <img src="Eventos.png" style="width: 700px;height: 400px; display: block;margin:auto">
 
-<p> Los strings tienen metodos rpopios separados de los demas elementos: con indexOf() (al igual que con search()) puedes encontrar donde empieza un texto especifico dentro de un string y con lastIndexOf() donde termina; el metodo slice() te regresa un pedazo de texto especificado entre ciertas posiciones, al igual que substr(); el metodo replace() se usa para reemplazar una cadena de caracteres con otra; puedes usar .toUpperCase() y .toLowerCase para convertir un texto a mayusculas y viceversa; el metodo concat () sirve para unir dos strings; .charAt regresa el caracter en una determinada posicion dentro de un string; puedes convertir un string en un arreglo con el metodo split() 
+<p> Los strings tienen metodos propios separados de los demas elementos: con indexOf() (al igual que con search()) puedes encontrar donde empieza un texto especifico dentro de un string y con lastIndexOf() donde termina; el metodo slice() te regresa un pedazo de texto especificado entre ciertas posiciones, al igual que substr(); el metodo replace() se usa para reemplazar una cadena de caracteres con otra; puedes usar .toUpperCase() y .toLowerCase para convertir un texto a mayusculas y viceversa; el metodo concat () sirve para unir dos strings; .charAt regresa el caracter en una determinada posicion dentro de un string; puedes convertir un string en un arreglo con el metodo split()</p>
+
+<p> Al igual que un string, los numeros tienen metodos propios, tales como: toString(), que convierte un numero a un string; toExponential(), que convierte un numero normal a uno exponencial con el numero de decimales deseados dentro del parentesis; toFixed(), que redondea un numero con el numero de decimales deseados dentro del parentesis; toPrecision(), que hace lo mismo que toFixed pero devuelve un numero redondeado a una longitud determinada; valueOf(), que te regresa el valor numerico de una variable. Respecto a las <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp"> funciones matemáticas </a> todas son estaticas. </p>
+
+<h3> Fechas </h3>
+
+<p> Hay 4 maneras de iniciar una fecha: </p>
+
+<pre> new Date()
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds) </pre>
+
+<p> Los siguientes son los metodos para fechas: </p>
+
+<img src="MetFechas.png" style="width: 700px;height: 400px; display: block;margin:auto">
+
+<h2> Arreglos </h2>
+
+<p> El arreglo es una variable especial que puede contener mas de un solo valor y se introduce en forma de lista. Los metodos son los siguientes: arreglo.join(), que une los elementos de un arreglo en un string con el separador dentro del parentesis; .pop(), que elimina el ultimo elemento del arreglo; .puch (), que agrega el elemento entre parentesis al arreglo; .shift(), que elimina el primer elemento del arreglo; .unshift(), que agrega un elemento al principio del arreglo; puedes cambiar un elemento en la posicion i con arreglo[i]="Elemento nuevo"; delete arreglo[i], que elimina el elemento en la posicion i; .splice(i1,i2,E1,...,En) se usa para agregar varios elementos a un arreglo, donde i1 es la posicion donde seran agregados, i2 el numero de elementos que se van a eliminar y En los elementos a agregar; arreglo1.concat(arreglo2), que concatena los arreglos; .slice() toma un elemento de un arreglo para ponerlo en otro. </p>
+
+<p> Switch funciona como un condicional por casos, dentro de las llaves escribes case #: bloque a ejecutar;break; etc. , donde en los bloques a ejecutar escribes la accion para cada caso; la declaracion break interrumpe un loop y continua con el codigo, mientras que la declaracion continue interrumpe una sola iteracion del loop, si se cumple una condicion, y luego continua con la siguiente iteracion. Ademas, puedes poner alguna etiqueta despues del break para salir de un bloque de codigo especifico. </p>
+
+
+
+
 
 
 
